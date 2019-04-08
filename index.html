@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl-PL" dir="ltr">
+
+<!-- HEAD -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+  <meta name="author" content="Biały Krystian">
+  <meta name="description" content="Kilka słów o firmie.">
+  <title>UNAM</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="fontawesome/css/all.css" />
+</head>
+
+<!-- BODY -->
+
+<body>
+
+  <!-- HEADER SECTION -->
+  <section id="_header" class="grid">
+    <div class="header">
+      <div class="header_content">
+        <a href="#"><img class="logo" src="img/logo.png" alt="" /></a>
+        <div class="language">
+          <a href="#"><img class="lang" src="img/uk.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar grid">
+    <ul class="navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </span>
+  </nav>
+
+  <!-- mobile nav -->
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- SLIDER -->
+  <div class="slider grid">
+    <div class="slider_content">
+      <div class="slideshowContainer">
+
+        <img class="imageSlides" src="http://www.unam.pl/unam_foto/1/original/1234.jpg" alt="">
+        <img class="imageSlides" src="http://www.unam.pl/unam_foto/1/original/1016_detail1.jpg" alt="">
+        <img class="imageSlides" src="http://www.unam.pl/unam_foto/1/original/987.jpg" alt="">
+
+        <span id="leftArrow" class="slideshowArrow">&triangleleft;</span>
+        <span id="rightArrow" class="slideshowArrow">&triangleright;</span>
+
+        <div class="slideshowCircles">
+          <span class="circle dot"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

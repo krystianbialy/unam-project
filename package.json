@@ -1,0 +1,14 @@
+{
+  "name": "unam_project",
+  "description": "UNAM company website",
+  "author": "Biały Krystian",
+  "dependencies": {
+    "dev": "^0.1.3",
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
