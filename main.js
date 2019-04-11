@@ -9,6 +9,16 @@ function closeSlideMenu() {
   document.getElementById('main').style.marginLeft = '0';
 }
 
+$(document).ready(function () {
+  $('.open-slide').click(function () {
+    $('.navbar').css("display", "none");
+  });
+
+  $('.btn-close').click(function () {
+    $('.navbar').css("display", "block");
+  });
+});
+
 //===== SLIDER =====
 
 //== image slides & cirles arrays, & counter
@@ -91,3 +101,12 @@ function slideshow() {
 //== show first image & then set & call slide interval
 setTimeout(slideshow, 1000);
 var imageSlideshowInterval = setInterval(slideshow, 10000);
+
+//===== FOOTER/CURRENT DATE =====
+function getDate() {
+  var today = new Date();
+  var year = today.getFullYear();
+  document.getElementById("currentDate").innerHTML = year;
+}
+
+getDate();

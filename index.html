@@ -34,10 +34,14 @@
   <!-- NAVIGATION -->
   <nav class="navbar grid">
     <ul class="navbar-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">O firmie</a></li>
+      <li><a href="#">Oferta</a></li>
+      <li><a href="#">Tłocznia</a></li>
+      <li><a href="#">Narzędziownia</a></li>
+      <li><a href="#">Laser</a></li>
+      <li><a href="#">Galeria</a></li>
+      <li><a href="#">Dofinansowanie z UE</a></li>
+      <li><a href="#">Kontakt</a></li>
     </ul>
 
     <span class="open-slide">
@@ -50,10 +54,14 @@
   <!-- mobile nav -->
   <div id="side-menu" class="side-nav">
     <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+    <a class="not" href="#">O firmie</a>
+    <a class="not" href="#">Oferta</a>
+    <a class="not" href="#">Tłocznia</a>
+    <a class="not" href="#">Narzędziownia</a>
+    <a class="not" href="#">Laser</a>
+    <a class="not" href="#">Galeria</a>
+    <a class="not" href="#">Dofinansowanie z UE</a>
+    <a class="not" href="#">Kontakt</a>
   </div>
 
   <!-- SLIDER -->
@@ -61,9 +69,9 @@
     <div class="slider_content">
       <div class="slideshowContainer">
 
-        <img class="imageSlides" src="http://www.unam.pl/unam_foto/1/original/1234.jpg" alt="">
-        <img class="imageSlides" src="http://www.unam.pl/unam_foto/1/original/1016_detail1.jpg" alt="">
-        <img class="imageSlides" src="http://www.unam.pl/unam_foto/1/original/987.jpg" alt="">
+        <img class="imageSlides" src="img/slider/1.jpg" alt="">
+        <img class="imageSlides" src="img/slider/2.jpg" alt="">
+        <img class="imageSlides" src="img/slider/3.jpg" alt="">
 
         <span id="leftArrow" class="slideshowArrow">&triangleleft;</span>
         <span id="rightArrow" class="slideshowArrow">&triangleright;</span>
@@ -77,6 +85,85 @@
       </div>
     </div>
   </div>
+
+  <!-- MAIN AREA -->
+  <main id="main">
+    <!-- main-a section -->
+    <section id="_main-a" class="grid">
+      <div class="main-a">
+        <div class="main_content-a">
+          <h1>O firmie</h1>
+          <div class="line"></div>
+          <p>UNAM jest firmą produkcyjno-usługową w branży narzędziowej i metalowej. Oprócz głównej siedziby, która
+            mieści
+            się w Złotowie,
+            firma posiada również zakład produkcyjno-usługowy w Wieleniu na ul. Przemysłowej.
+          </p>
+
+          <p>Początki działalności sięgają 1992 roku. Głównym tematem produkcji było projektowanie i produkcja
+            wykrojników, tłoczników i form wtryskowych.
+            Zdobyte doświadczenie oraz ciągły rozwój firmy pozwoliły na rozszerzenie oferty o obróbkę plastyczną metalu
+            i
+            wtryskiwanie tworzyw sztucznych.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- main-b section -->
+    <section id="_main-b" class="grid">
+      <div class="main-b">
+        <div class="main_content-b">
+          <ul>
+            <li>
+              <div class="box">
+                <img src="img/main_area_img/calendar_clock.jpg" alt="">
+                <div class="box-content">
+                  <p>Dzięki dynamicznemu rozwojowi, wykwalifikowanej kadrze i bogatemu parkowi maszynowemu możemy
+                    terminowo realizować wszystkie zlecenia.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <img src="img/main_area_img/handshake.jpg" alt="">
+                <div class="box-content">
+                  <p>Naszym podstawowym celem jest wysokiej jakości wyrób finalny, wyprodukowany w oparciu o nowoczesne
+                    technologie oraz sprawność obsługi,
+                    a przez to uzyskanie zadowolenia klientów krajowych jak i zagranicznych.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <img src="img/main_area_img/shield.jpg" alt="">
+                <div class="box-content">
+                  <p>Współpraca z wyspecjalizowaną kadrą techniczną w połączeniu z precyzją i wysoko wykwalifikowanym
+                    zespołem pracowników,
+                    oraz rozbudowującym się parkiem maszynowym i bogato wyposażoną narzędziownią pozwala nam na łatwe
+                    dostosowanie potencjału
+                    firmy na ukierunkowane potrzeby klienta.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER-->
+  <div class="footer grid">
+    <div class="footer_content">
+      <p>
+        UNAM <span id="currentDate"></span> &copy; Wszelkie prawa zastrzeżone.
+      </p>
+    </div>
+  </div>
+  </section>
 
   <!-- SCRIPT JS -->
   <script src="js/jquery-3.3.1.min.js"></script>

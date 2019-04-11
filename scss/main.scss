@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 a,
@@ -13,6 +15,7 @@ a:hover {
   outline: none;
   text-decoration: none;
 }
+
 /***** HEADER SECTION *****/
 .header_content {
   display: flex;
@@ -29,22 +32,25 @@ a:hover {
   height: 37px;
   border: 1px solid black;
 }
+
 /***** NAVIGATION *****/
 .navbar {
   background-color: #002b80;
   overflow: hidden;
   height: 63px;
+
   ul {
     margin: 8px 0 0;
     list-style: none;
     justify-content: flex-end;
-    a {
-      display: flex;
-      color: #fff;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
   }
+}
+
+.navbar a {
+  display: flex;
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .fa-bars {
@@ -58,20 +64,20 @@ a:hover {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #002b80;
   opacity: 0.9;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
+
   a {
     padding: 10px 10px 10px 30px;
     text-decoration: none;
-    font-size: 22px;
-    color: #ccc;
+    font-size: 1.1em;
+    color: #fff;
     display: block;
-    transition: 0.3s;
+
     &:hover {
-      color: #fff;
+      color: yellow;
     }
   }
 }
@@ -83,10 +89,11 @@ a:hover {
   font-size: 36px;
   margin-left: 50px;
 }
+
 /***** SLIDER *****/
 .slider_content {
   padding-top: 1px;
-  background-color: #001133;
+  background-color: #034F84;
 }
 
 .slideshowContainer {
@@ -113,25 +120,26 @@ a:hover {
 }
 
 .slideshowArrow {
-  font-size: 4em;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 2.8em;
+  color: #fff;
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
+
   &:hover {
-    opacity: 0.75;
+    opacity: 0.7;
   }
 }
 
 #leftArrow {
   position: absolute;
-  left: 5%;
+  left: 7%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
 #rightArrow {
   position: absolute;
-  right: 5%;
+  right: 7%;
   top: 50%;
   transform: translate(50%, -50%);
 }
@@ -148,8 +156,8 @@ a:hover {
   display: inline-block;
   margin-left: 3px;
   margin-right: 3px;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border: solid 2px rgba(255, 255, 255, 0.5);
   transition: 1s ease-in-out;
@@ -159,6 +167,81 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.7);
   border: solid 2px rgba(255, 255, 255, 0.5);
 }
+
+/***** MAIN AREA *****/
+#main {
+  margin-left: 0 !important;
+}
+
+/* main-a section */
+.main_content-a {
+  text-align: center;
+  padding: 20px 20px 30px 20px;
+
+  h1 {
+    margin-top: 10px;
+  }
+
+  background: #F5F5F1;
+}
+
+.main_content-a p {
+  margin-top: 15px;
+}
+
+.line {
+  margin: 10px auto;
+  border-bottom: 1px solid black;
+}
+
+/* main-b section */
+.main_content-b {
+  padding: 20px 35px;
+  text-align: center;
+  line-height: 0;
+}
+
+.main_content-b li {
+  list-style: none;
+}
+
+.box {
+  margin: 15px 0;
+  padding-bottom: 5px;
+  -webkit-box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.32);
+}
+
+.box-content {
+  margin: 0 auto 20px auto;
+  width: 85%;
+}
+
+.main_content-b img {
+  margin-top: 20px;
+  width: 85%;
+  height: auto;
+}
+
+.main_content-b p {
+  background: rgb(242, 244, 248);
+  padding: 20px 15px;
+  line-height: 1.5;
+  text-align: left
+}
+
+/***** FOOTER *****/
+.footer_content {
+  background: #002b80;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-top: 5px solid yellow;
+}
+
+
+
 /***** MEDIA QUERIES *****/
 /* header */
 @media(max-width:568px) {
@@ -168,6 +251,7 @@ a:hover {
     margin-left: 35px;
   }
 }
+
 @media(max-width:420px) {
   .language {
     position: absolute;
@@ -175,23 +259,29 @@ a:hover {
   }
 
   .lang {
-    width: 35px;
-    height: 18px;
+    width: 30px;
+    height: auto;
   }
 }
+
 /* navigation */
 @media(max-width:568px) {
   .navbar {
     position: absolute;
     top: 0;
-    height: 55px;
+    height: 50px;
   }
 
   .navbar-nav {
     display: none;
   }
 }
+
 @media(min-width:569px) {
+  .navbar {
+    display: block !important;
+  }
+
   .navbar ul {
     display: flex;
   }
@@ -200,7 +290,8 @@ a:hover {
     border-bottom: 1px solid yellow;
   }
 
-  .open-slide {
+  .open-slide,
+  .side-nav {
     display: none;
   }
 }
