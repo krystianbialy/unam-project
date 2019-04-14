@@ -20,8 +20,8 @@
 <body>
 
   <!-- HEADER SECTION -->
-  <section id="_header" class="grid">
-    <div class="header">
+  <section id="_header">
+    <div class="header grid">
       <div class="header_content">
         <a href="#"><img class="logo" src="img/logo.png" alt="" /></a>
         <div class="language">
@@ -32,7 +32,7 @@
   </section>
 
   <!-- NAVIGATION -->
-  <nav class="navbar grid">
+  <nav class="navbar">
     <ul class="navbar-nav">
       <li><a href="#">O firmie</a></li>
       <li><a href="#">Oferta</a></li>
@@ -73,8 +73,8 @@
         <img class="imageSlides" src="img/slider/2.jpg" alt="">
         <img class="imageSlides" src="img/slider/3.jpg" alt="">
 
-        <span id="leftArrow" class="slideshowArrow">&triangleleft;</span>
-        <span id="rightArrow" class="slideshowArrow">&triangleright;</span>
+        <span class="slideshowArrow"><i id="leftArrow" class="fas fa-angle-left"></i></span>
+        <span class="slideshowArrow"><i id="rightArrow" class="fas fa-angle-right"></i></span>
 
         <div class="slideshowCircles">
           <span class="circle dot"></span>
@@ -89,30 +89,34 @@
   <!-- MAIN AREA -->
   <main id="main">
     <!-- main-a section -->
-    <section id="_main-a" class="grid">
-      <div class="main-a">
+    <section id="_main-a">
+      <div class="main-a grid">
         <div class="main_content-a">
           <h1>O firmie</h1>
           <div class="line"></div>
-          <p>UNAM jest firmą produkcyjno-usługową w branży narzędziowej i metalowej. Oprócz głównej siedziby, która
-            mieści
-            się w Złotowie,
-            firma posiada również zakład produkcyjno-usługowy w Wieleniu na ul. Przemysłowej.
-          </p>
-
-          <p>Początki działalności sięgają 1992 roku. Głównym tematem produkcji było projektowanie i produkcja
-            wykrojników, tłoczników i form wtryskowych.
-            Zdobyte doświadczenie oraz ciągły rozwój firmy pozwoliły na rozszerzenie oferty o obróbkę plastyczną metalu
-            i
-            wtryskiwanie tworzyw sztucznych.
-          </p>
+          <div class="left_side">
+            <p>UNAM jest firmą produkcyjno-usługową w branży narzędziowej i metalowej. Oprócz
+              głównej siedziby, która mieści się w Złotowie, firma posiada również zakład produkcyjno-usługowy w
+              Wieleniu na ul. Przemysłowej.
+            </p>
+            <img src="img/main_area_img/firma.jpg" alt="">
+            <p class="under_img">Siedziba Złotów</p>
+            <p>Początki działalności sięgają 1992 roku. Głównym tematem produkcji było projektowanie i produkcja
+              wykrojników, tłoczników i form wtryskowych.
+              Zdobyte doświadczenie oraz ciągły rozwój firmy pozwoliły na rozszerzenie oferty o obróbkę plastyczną
+              metalu i wtryskiwanie tworzyw sztucznych.
+            </p>
+          </div>
+          <div class="right_side">
+            <img src="img/main_area_img/firma.jpg" alt="">
+          </div>
         </div>
       </div>
     </section>
 
     <!-- main-b section -->
-    <section id="_main-b" class="grid">
-      <div class="main-b">
+    <section id="_main-b">
+      <div class="main-b grid">
         <div class="main_content-b">
           <ul>
             <li>
@@ -156,7 +160,7 @@
   </main>
 
   <!-- FOOTER-->
-  <div class="footer grid">
+  <div class="footer">
     <div class="footer_content">
       <p>
         UNAM <span id="currentDate"></span> &copy; Wszelkie prawa zastrzeżone.
