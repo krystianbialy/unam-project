@@ -37,14 +37,19 @@ a:hover {
 .navbar {
   background-color: #002b80;
   overflow: hidden;
-  height: 63px;
+  position: absolute;
+  top: 0;
+  height: 50px;
 
   ul {
-    margin: 6px 0 0;
-    padding-right: 280px;
+    margin-top: 6px;
     list-style: none;
     justify-content: flex-end;
   }
+}
+
+.navbar-nav {
+  display: none;
 }
 
 .navbar a {
@@ -59,16 +64,17 @@ a:hover {
 }
 
 .side-nav {
-  height: 100%;
+  height: auto;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #002b80;
   opacity: 0.9;
-  overflow-x: hidden;
+  overflow-x: auto;
   padding-top: 60px;
+  padding-bottom: 20px;
 
   a {
     padding: 10px 10px 10px 30px;
@@ -98,6 +104,7 @@ a:hover {
 
 .slider_content {
   background-color: #034F84;
+  padding-top: 1px;
 }
 
 .slideshowContainer {
@@ -105,6 +112,7 @@ a:hover {
   overflow: hidden;
   width: 100%;
   height: 300px;
+  margin-top: 15px;
 }
 
 .imageSlides {
@@ -204,12 +212,16 @@ a:hover {
   margin-top: 20px;
 }
 
-p.under_img {
+.left_side p.under_img_left {
   margin: 0;
   font-size: 14px;
 }
 
 .right_side img {
+  display: none;
+}
+
+.right_side p.under_img_right {
   display: none;
 }
 
@@ -234,12 +246,12 @@ p.under_img {
 
 .box-content {
   margin: 0 auto 20px auto;
-  width: 85%;
+  width: 90%;
 }
 
 .main_content-b img {
   margin-top: 20px;
-  width: 85%;
+  width: 90%;
   height: auto;
 }
 
@@ -251,45 +263,55 @@ p.under_img {
 }
 
 /***** FOOTER *****/
-.footer_content {
+.footer {
   background: #002b80;
+  border-top: 5px solid yellow;
+}
+
+.footer_content {
   color: #fff;
   text-align: center;
   padding: 10px;
-  border-top: 5px solid yellow;
 }
 
 
 
 /***** MEDIA QUERIES *****/
 /* grid */
-@media (min-width:700px) {
+@media (min-width: 850px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr;
   }
 
   .header_content,
+  .navbar-nav,
   .slider_content,
   .main_content-a,
-  .main_content-b {
+  .main_content-b,
+  .footer_content {
     grid-column: 2/4;
   }
 }
 
 /* header */
-@media(max-width:568px) {
+@media (min-width: 768px) and (max-width: 849px) {
   .logo {
-    width: 240px;
-    height: auto;
     margin-left: 35px;
   }
 }
 
-@media(max-width:420px) {
-  .language {
-    position: absolute;
-    left: 310px;
+@media (max-width: 1305px) {
+  .lang {
+    margin-right: 10px;
+  }
+}
+
+@media(max-width: 767px) {
+  .logo {
+    width: 240px;
+    height: auto;
+    margin-left: 35px;
   }
 
   .lang {
@@ -298,22 +320,58 @@ p.under_img {
   }
 }
 
-/* navigation */
-@media(max-width: 700px) {
-  .navbar {
+@media(max-width: 356px) {
+  .language {
     position: absolute;
-    top: 0;
-    height: 50px;
-  }
-
-  .navbar-nav {
-    display: none;
+    left: 280px;
   }
 }
 
-@media(min-width: 701px) {
+@media(max-width: 340px) {
+  .language {
+    position: absolute;
+    left: 265px;
+  }
+}
+
+@media(max-width: 325px) {
+  .language {
+    position: absolute;
+    left: 255px;
+  }
+}
+
+@media(max-width: 320px) {
+  .logo {
+    width: 100%;
+  }
+
+  .language {
+    position: static;
+    width: 40%;
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  .lang {
+    width: 40%;
+    margin-right: 0px;
+  }
+}
+
+
+/* navigation */
+@media(min-width: 850px) {
   .navbar {
     display: block !important;
+    height: 63px;
+    position: sticky;
+    z-index: 10;
+  }
+
+  .navbar-nav {
+    display: block;
+    margin-right: 20px;
   }
 
   .navbar ul {
@@ -331,17 +389,11 @@ p.under_img {
 }
 
 /* slider */
-@media (max-width: 700px) {
+@media (min-width: 850px) {
   .slider_content {
-    padding-top: 1px;
+    padding-top: 0px;
   }
 
-  .slideshowContainer {
-    margin-top: 15px;
-  }
-}
-
-@media (min-width: 701px) {
   .slideshowContainer {
     margin: 25px 0;
   }
@@ -361,7 +413,7 @@ p.under_img {
 
 /*** main area ***/
 /* main_content-a */
-@media (min-width: 701px) {
+@media (min-width: 1100px) {
   .main_content-a {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -385,31 +437,123 @@ p.under_img {
     }
   }
 
+  .left_side p.under_img_left {
+    display: none;
+  }
+
   .right_side img {
     width: 90%;
     height: auto;
     margin-top: 25px;
     display: block;
   }
+
+  .right_side p.under_img_right {
+    display: block;
+    width: 90%;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1160px) {
+  .left_side {
+    padding: 7px 25px 0px 25px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .main_content-a {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+  .main_content-a {
+    padding: 25px 100px 30px 100px;
+  }
+
+  .main_content-a h1 {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 585px) and (max-width: 800px) {
+  .main_content-a {
+    padding: 20px 50px 25px 50px;
+  }
 }
 
 /* main_content-b */
-@media (min-width: 701px) {
+@media (min-width: 768px) {
   .main_content-b ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
-    grid-gap: 60px;
+    grid-gap: 80px;
+    padding: 0 100px;
   }
 
   .box {
-    height: 550px;
+    height: 582px;
   }
 
   .main_content-b img {
     margin-top: 20px;
-    width: 85%;
-    height: 220px;
     object-fit: cover;
+  }
+}
+
+@media (min-width: 1149px) {
+  .box {
+    height: 555px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1149px) {
+  .main_content-b img {
+    height: 220px;
+    width: 255px;
+  }
+
+  .main_content-b .box-content {
+    width: 255px;
+  }
+
+  .main_content-b ul {
+    display: grid;
+    grid-template-columns: 285px 285px;
+    padding: 0px;
+    grid-gap: 10px 60px;
+    justify-content: center;
+  }
+
+  .three {
+    grid-column: span 2;
+    padding: 0 172px;
+
+
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .main_content-b ul {
+    width: 380px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .main_content-b ul {
+    width: 330px;
+    margin: 0 auto;
+  }
+}
+
+/* footer */
+@media (min-width: 768px) {
+  .footer_content {
+    padding: 13px;
   }
 }
