@@ -1,0 +1,140 @@
+/*** main area ***/
+/* main_content-a */
+@media (min-width: 1100px) {
+    .main_content-a {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .main_content-a h1 {
+      grid-column: span 2;
+    }
+  
+    .line {
+      grid-column: span 2;
+      margin-top: 15px;
+      width: 100%;
+    }
+  
+    .left_side {
+      padding: 25px;
+  
+      img {
+        display: none;
+      }
+    }
+  
+    .left_side p.under_img_left {
+      display: none;
+    }
+  
+    .right_side img {
+      width: 90%;
+      height: auto;
+      margin-top: 25px;
+      margin-left: 15px;
+      display: block;
+    }
+  
+    .right_side p.under_img_right {
+      display: block;
+      width: 90%;
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 1100px) and (max-width: 1160px) {
+    .left_side {
+      padding: 7px 25px 0px 25px;
+    }
+  }
+  
+  @media (min-width: 900px) and (max-width: 1100px) {
+    .main_content-a {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (min-width: 801px) and (max-width: 1100px) {
+    .main_content-a {
+      padding: 25px 100px 30px 100px;
+    }
+  
+    .main_content-a h1 {
+      margin-top: 0px;
+    }
+  }
+  
+  @media (min-width: 585px) and (max-width: 800px) {
+    .main_content-a {
+      padding: 20px 50px 25px 50px;
+    }
+  }
+  
+  /* main_content-b */
+  @media (min-width: 768px) {
+    .main_content-b ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-around;
+      grid-gap: 80px;
+      padding: 0 100px;
+    }
+  
+    .box {
+      height: 540px;
+    }
+  
+    .main_content-b img {
+      margin-top: 20px;
+      object-fit: cover;
+    }
+  }
+  
+  @media (min-width: 1149px) {
+    .box {
+      height: 555px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1149px) {
+    .main_content-b img {
+      height: auto;
+      width: 255px;
+    }
+  
+    .main_content-b .box-content {
+      width: 255px;
+    }
+  
+    .main_content-b ul {
+      display: grid;
+      grid-template-columns: 285px 285px;
+      padding: 0px;
+      grid-gap: 10px 60px;
+      justify-content: center;
+    }
+  
+    .three {
+      grid-column: span 2;
+      padding: 0 172px;
+  
+  
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 768px) {
+    .main_content-b ul {
+      width: 380px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 400px) and (max-width: 600px) {
+    .main_content-b ul {
+      width: 330px;
+      margin: 0 auto;
+    }
+  }
