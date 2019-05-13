@@ -9,7 +9,7 @@ gulp.task('serve', function() {
   browserSync.init({
     server: "./"
   });
-  gulp.watch('scss/*.scss', gulp.series('sass'));
+  gulp.watch('scss/**/*.scss', gulp.series('sass'));
   gulp.watch("*.html").on('change', browserSync.reload);
   gulp.watch("*.js").on('change', browserSync.reload);
 });

@@ -1,0 +1,38 @@
+/***** MAIN AREA *****/
+/* gallery section */
+.gallery_content {
+  text-align: center;
+  padding: 20px 20px 30px 20px;
+
+  h1 {
+    margin-top: 10px;
+  }
+}
+
+.gallery_box {
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 7px auto;
+}
+
+.gallery_box h2 {
+  background: blue;
+  position: absolute;
+  width: 100%;
+  padding: 10px 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.gallery_box img {
+  width: 100%;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+.gallery_box img:hover {
+  opacity: 1;
+}

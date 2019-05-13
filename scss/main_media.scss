@@ -1,5 +1,6 @@
 /***** IMPORT MEDIA QUERIES *****/
 @import "main_page/about_company_media.scss";
+@import "subpages/gallery_media.scss";
 
 /***** MEDIA QUERIES *****/
 /* grid */
@@ -12,8 +13,6 @@
   .header_content,
   .navbar-nav,
   .slider_content,
-  .main_content-a,
-  .main_content-b,
   .footer_content {
     grid-column: 2/4;
   }
