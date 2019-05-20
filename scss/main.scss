@@ -34,7 +34,7 @@ a:hover {
 .lang {
   width: 40px;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 /***** NAVIGATION *****/
@@ -50,17 +50,17 @@ a:hover {
     list-style: none;
     justify-content: flex-end;
   }
+
+  a {
+    display: flex;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 }
 
 .navbar-nav {
   display: none;
-}
-
-.navbar a {
-  display: flex;
-  color: #fff;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 .fa-bars {
@@ -80,6 +80,14 @@ a:hover {
   padding-top: 60px;
   padding-bottom: 20px;
 
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
   a {
     padding: 10px 10px 10px 30px;
     text-decoration: none;
@@ -88,17 +96,9 @@ a:hover {
     display: block;
 
     &:hover {
-      color: yellow;
+      color: #FFFF00;
     }
   }
-}
-
-.side-nav .btn-close {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  font-size: 36px;
-  margin-left: 50px;
 }
 
 /***** SLIDER *****/
@@ -139,10 +139,10 @@ a:hover {
   color: #fff;
   cursor: pointer;
   opacity: 0.7;
-}
 
-.slideshowArrow i {
-  padding: 5px;
+  i {
+    padding: 5px;
+  }
 }
 
 #leftArrow {
@@ -191,7 +191,7 @@ a:hover {
 /***** FOOTER *****/
 .footer {
   background: #002b80;
-  border-top: 5px solid yellow;
+  border-top: 5px solid #FFFF00;
 }
 
 .footer_content {

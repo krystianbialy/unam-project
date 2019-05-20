@@ -15,24 +15,23 @@
   overflow: hidden;
   position: relative;
   margin: 7px auto;
-}
 
-.gallery_box h2 {
-  background: blue;
-  position: absolute;
-  width: 100%;
-  padding: 10px 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-.gallery_box img {
-  width: 100%;
-  opacity: 0.7;
-  object-fit: cover;
-}
-
-.gallery_box img:hover {
-  opacity: 1;
+  h2 {
+    background: blue;
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

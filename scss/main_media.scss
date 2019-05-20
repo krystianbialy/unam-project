@@ -83,7 +83,6 @@
   }
 }
 
-
 /* navigation */
 @media(min-width: 855px) {
   .navbar {
@@ -91,19 +90,21 @@
     height: 63px;
     position: sticky;
     z-index: 10;
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      &:hover {
+        border-bottom: 1px solid #FFFF00;
+      }
+    }
   }
 
   .navbar-nav {
     display: block;
     margin-right: 20px;
-  }
-
-  .navbar ul {
-    display: flex;
-  }
-
-  .navbar a:hover {
-    border-bottom: 1px solid yellow;
   }
 
   .open-slide,
