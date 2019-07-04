@@ -53,7 +53,7 @@
       </span>
     </div>
   </nav>
-  
+
   <!-- mobile nav -->
   <div id="side-menu" class="side-nav">
     <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
@@ -91,74 +91,38 @@
 
   <!-- MAIN AREA -->
   <main id="main">
-    <!-- main-a section -->
-    <section id="_main-a">
-      <div class="main-a grid">
-        <div class="main_content-a">
-          <h1>O firmie</h1>
+    <!-- contact section -->
+    <section id="_contact">
+      <div class="contact grid">
+        <div class="contact_content">
+          <h1>Kontakt</h1>
           <div class="line"></div>
-          <div class="left_side">
-            <p>UNAM jest firmą produkcyjno-usługową w branży narzędziowej i metalowej. Oprócz
-              głównej siedziby, która mieści się w Złotowie, firma posiada również zakład produkcyjno-usługowy w
-              Wieleniu na ul. Przemysłowej.
-            </p>
-            <img src="img/about_company/firma.jpg" alt="">
-            <p class="under_img_left">Siedziba Złotów</p>
-            <p>Początki działalności sięgają 1992 roku. Głównym tematem produkcji było projektowanie i produkcja
-              wykrojników, tłoczników i form wtryskowych.
-              Zdobyte doświadczenie oraz ciągły rozwój firmy pozwoliły na rozszerzenie oferty o obróbkę plastyczną
-              metalu i wtryskiwanie tworzyw sztucznych.
-            </p>
+          <div class="form-box">
+            <div class="contact-form">
+              <form role="form" action="contact.php" method="post">
+                <span class="warning">
+                  Wymagane jest wypełnienie wszystkich pól!</br> W przeciwnym razie przycisk wysłania wiadomośći
+                  będzie nieaktywny.
+                </span>
+                <div class="form-group">
+                  <label class="sr-only" for="contact-email">Email</label>
+                  <input type="text" maxlength="100" name="email" placeholder="Twój mail"
+                    class="contact-email form-control" id="contact-email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="contact-subject">Subject</label>
+                  <input type="text" maxlength="150" name="subject" placeholder="temat"
+                    class="contact-subject form-control" id="contact-subject">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="contact-message">Message</label>
+                  <textarea name="message" maxlength="2000" placeholder="wiadomość" class="contact-message form-control"
+                    id="contact-message"></textarea>
+                </div>
+                <input id="_submit" class="submit" type="submit" value="Wyślij" />
+              </form>
+            </div>
           </div>
-          <div class="right_side">
-            <img src="img/about_company/firma.jpg" alt="">
-            <p class="under_img_right">Siedziba Złotów</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- main-b section -->
-    <section id="_main-b">
-      <div class="main-b grid">
-        <div class="main_content-b">
-          <ul>
-            <li>
-              <div class="box">
-                <img src="img/about_company/calendar.jpg" alt="">
-                <div class="box-content">
-                  <p>Dzięki dynamicznemu rozwojowi, wykwalifikowanej kadrze i bogatemu parkowi maszynowemu możemy
-                    terminowo realizować wszystkie zlecenia.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="box">
-                <img src="img/about_company/handshake.jpg" alt="">
-                <div class="box-content">
-                  <p>Naszym podstawowym celem jest wysokiej jakości wyrób finalny, wyprodukowany w oparciu o nowoczesne
-                    technologie oraz sprawność obsługi,
-                    a przez to uzyskanie zadowolenia klientów krajowych jak i zagranicznych.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="three">
-              <div class="box">
-                <img src="img/about_company/target.jpg" alt="">
-                <div class="box-content">
-                  <p>Współpraca z wyspecjalizowaną kadrą techniczną w połączeniu z precyzją i wysoko wykwalifikowanym
-                    zespołem pracowników,
-                    oraz rozbudowującym się parkiem maszynowym i bogato wyposażoną narzędziownią pozwala nam na łatwe
-                    dostosowanie potencjału
-                    firmy na ukierunkowane potrzeby klienta.
-                  </p>
-                </div>
-              </div>
-            </li>
-            </ul>
-          </ul>
         </div>
       </div>
     </section>
@@ -177,6 +141,7 @@
   <!-- SCRIPT JS -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="main.js"></script>
+  <script src="js/mail.js"></script>
 
 </body>
 
