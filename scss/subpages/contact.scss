@@ -2,19 +2,19 @@
 .contact_content {
   text-align: center;
   padding: 20px 20px 30px 20px;
-}
 
-h1 {
-  margin-top: 10px;
+  h1 {
+    margin-top: 10px;
+  }
 }
 
 .contact-form {
   padding: 15px 20px;
-  background: #F0EDE5;
-}
 
-.contact-form form .input-error {
-  border-color: #d05a4e;
+
+  form .input-error {
+    border-color: #d05a4e;
+  }
 }
 
 /***** Warning *****/
@@ -28,7 +28,7 @@ input[type="text"],
 textarea,
 textarea.form-control {
   height: 60px;
-  width: 60%;
+  width: 85%;
   margin-top: 15px;
   padding: 0 20px;
   vertical-align: middle;
@@ -73,15 +73,21 @@ textarea.form-control:focus {
   box-shadow: none;
 }
 
-input[type="text"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-control:-moz-placeholder {
+input[type="text"]:-moz-placeholder,
+textarea:-moz-placeholder,
+textarea.form-control:-moz-placeholder {
   color: #9d9892;
 }
 
-input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder {
+input[type="text"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+textarea.form-control:-ms-input-placeholder {
   color: #9d9892;
 }
 
-input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder {
+input[type="text"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea.form-control::-webkit-input-placeholder {
   color: #9d9892;
 }
 
@@ -92,14 +98,20 @@ input.submit {
   background: #006E6D;
   cursor: pointer;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   padding: 10px 30px;
   border: none;
   font-family: 'Lato', sans-serif;
+
+  &:hover {
+    background: #006E6D;
+  }
 }
 
-input.submit:hover {
-  background: #006E6D;
+/***** GOOGLE MAP LOCATION *****/
+.google_map {
+  width: 94%;
+  height: 320px;
 }
 
 /***** AFTER SUBMIT *****/
@@ -140,40 +152,5 @@ input.submit:hover {
 
   100% {
     transform: rotate(360deg);
-  }
-}
-
-/***** MEDIA QUERIES *****/
-@media (min-width: 767px) {
-  .contact_content {
-    padding: 20px 20px 30px 20px;
-  }
-}
-
-/* submit */
-@media (min-width: 767px) {
-  input.submit {
-    font-size: 20px;
-    padding: 10px 40px;
-    margin-top: 20px;
-  }
-
-  input.submit:hover {
-    background: #000;
-  }
-}
-
-/* AFTER SUBMIT */
-@media (min-width:767px) {
-  .aftersubmit {
-    font-size: 18px;
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 767px) {
-  .loader {
-    width: 50px;
-    height: 50px;
   }
 }
