@@ -70,11 +70,11 @@ a:hover {
 
 .side-nav {
   height: auto;
-  width: 0;
+  width: 250px;
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -250px;
   background-color: #002b80;
   opacity: 0.9;
   overflow-x: auto;
@@ -125,8 +125,9 @@ a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 100%;
+  max-width: 100%;
   min-height: 100%;
+  object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }

@@ -1,12 +1,12 @@
 ## General info
 My first page build on CSS Grid.  
 This page is for UNAM company.  
-url UNAM website: www.unam.pl
+url UNAM website: ...
 
 ## Technologies and tools
 Project is created with:
 * HTML5
-* SASS/CSS3
+* CSS3/SASS
 * JavaScript
 * jQuery v3.3.1
 * Npm v6.9.0
@@ -16,6 +16,12 @@ Project is created with:
 Site under construction.
 
 ## Sources
+slider/img url:
+* https://pixabay.com/photos/industrial-plasma-industry-factory-2805773/
+* https://pixabay.com/photos/milling-machining-industry-1151344/
+* https://pixabay.com/photos/milling-machining-industry-1151358/
+main page/main-a section/img url:
+* https://pixabay.com/photos/laser-cutting-machine-plasma-2819142/
 main page/main-b section/img url:
 * https://pixabay.com/pl/photos/papieru-sk%C5%82ad-biznesu-pi%C5%9Bmie-3141341/
 * https://pixabay.com/pl/photos/biznesu-urz%C4%85d-umowy-transakcja-3167295/
