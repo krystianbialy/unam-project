@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -97,11 +98,26 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gallery.html',
+      filename: './gallery.html',
+      
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/contact.html',
+      filename: './contact.html',
+      
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contentHash].css'
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ]
 }
