@@ -1,0 +1,16 @@
+.footer {
+  background: #002b80;
+  border-top: 5px solid #FFFF00;
+}
+
+.footer_content {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer_content {
+    padding: 13px;
+  }
+}
