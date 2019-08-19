@@ -9,6 +9,7 @@ Project is created with:
 * SASS
 * JavaScript
 * PHP
+* BEM
 * Yarn v1.17.3
 * Webpack v4.38.0
 * jQuery v3.4.1

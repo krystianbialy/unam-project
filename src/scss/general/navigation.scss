@@ -1,11 +1,11 @@
-.navbar {
+.navigation {
   background-color: #002b80;
   overflow: hidden;
   position: absolute;
   top: 0;
   height: 50px;
 
-  ul {
+  .navigation__list {
     margin-top: 6px;
     list-style: none;
     justify-content: flex-end;
@@ -19,7 +19,7 @@
   }
 }
 
-.navbar-nav {
+.navigation__list {
   display: none;
 }
 
@@ -62,7 +62,7 @@
 }
 
 @media(min-width: 855px) {
-  .navbar {
+  .navigation {
     display: block !important;
     height: 63px;
     position: sticky;
@@ -79,12 +79,12 @@
     }
   }
 
-  .navbar-nav {
+  .navigation__list {
     display: block;
     margin-right: 20px;
   }
 
-  .open-slide,
+  .open-side-menu,
   .side-nav {
     display: none;
   }

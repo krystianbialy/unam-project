@@ -1,13 +1,12 @@
-//===== NAVIGATION =====
 $(document).ready(function () {
   $('#side-menu').hide();
-  $('.open-slide').click(function (e) {
+  $('.open-side-menu').click(function (e) {
     e.stopPropagation();
     var $open = $('#side-menu');
     if ($open.is(':hidden')) {
       $open.fadeIn();
       $('.side-nav').css('left', '0px')
-      $('.navbar').css("display", "none");
+      $('.navigation').css("display", "none");
     } else {}
   });
 
@@ -16,7 +15,7 @@ $(document).ready(function () {
     var $open = $('#side-menu');
     if ($open.is(':visible')) {
       $open.fadeOut();
-      $('.navbar').css("display", "block");
+      $('.navigation').css("display", "block");
     } else {}
   });
 
@@ -25,7 +24,7 @@ $(document).ready(function () {
     var $open = $('#side-menu');
     if ($open.is(':visible')) {
       $open.fadeOut();
-      $('.navbar').css("display", "block");
+      $('.navigation').css("display", "block");
     } else {}
   });
 });

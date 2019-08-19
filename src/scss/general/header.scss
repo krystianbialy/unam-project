@@ -1,4 +1,4 @@
-.header_content {
+.header__content {
   display: flex;
   padding: 20px;
   text-align: left;
@@ -8,32 +8,32 @@
   margin-left: auto;
 }
 
-.lang {
+.language-img {
   width: 40px;
   height: auto;
   border: 1px solid #000;
 }
 
 @media (min-width: 768px) and (max-width: 854px) {
-  .logo {
+  .logo-img {
     margin-left: 35px;
   }
 }
 
 @media (max-width: 1305px) {
-  .lang {
+  .language-img {
     margin-right: 10px;
   }
 }
 
 @media(max-width: 767px) {
-  .logo {
+  .logo-img {
     width: 240px;
     height: auto;
     margin-left: 35px;
   }
 
-  .lang {
+  .language-img {
     width: 30px;
     height: auto;
   }
@@ -61,7 +61,7 @@
 }
 
 @media(max-width: 320px) {
-  .logo {
+  .logo-img {
     width: 100%;
   }
 
@@ -72,7 +72,7 @@
     text-align: center;
   }
 
-  .lang {
+  .language-img {
     width: 40%;
     margin-right: 0px;
   }
