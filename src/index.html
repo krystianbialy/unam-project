@@ -13,7 +13,7 @@
 <body>
 
   <header class="header grid">
-    <div class="header__container">
+    <div class="header__container grid__column">
       <div class="header__content">
         <a class="logo" href="index.html"><img class="logo-img" src="img/logo/logo.png" alt="logo-img" /></a>
         <a class="language" href="#"><img class="language-img" src="img/language/uk.png" alt="language-img" /></a>
@@ -21,69 +21,72 @@
     </div>
   </header>
 
-  <nav class="navigation grid">
-    <div class="navigation__container">
-      <div class="navigation__menu">
-        <ul class="navigation__list">
-          <li class="list__item"><a href="index.html">O firmie</a></li>
-          <li class="list__item"><a href="#">Oferta</a></li>
-          <li class="list__item"><a href="#">Tłocznia</a></li>
-          <li class="list__item"><a href="#">Narzędziownia</a></li>
-          <li class="list__item"><a href="#">Laser</a></li>
-          <li class="list__item"><a href="gallery.html">Galeria</a></li>
-          <li class="list__item"><a href="#">Dofinansowanie z UE</a></li>
-          <li class="list__item"><a href="contact.html">Kontakt</a></li>
-        </ul>
-      </div>
+  <nav class="navigation">
+    <div class="grid">
+      <div class="navigation__container grid__column">
+        <div class="navigation__menu">
+          <ul class="navigation__list">
+            <li class="navigation__list-item"><a class="navigation__item-data" href="index.html">O firmie</a></li>
+            <li class="navigation__list-item"><a class="navigation__item-data" href="offer.html">Oferta</a></li>
+            <li class="navigation__list-item"><a class="navigation__item-data" href="press.html">Tłocznia</a></li>
+            <li class="navigation__list-item"><a class="navigation__item-data" href="tool-shop.html">Narzędziownia</a></li>
+            <li class="navigation__list-item"><a class="navigation__item-data" href="laser.html">Laser</a></li>
+            <li class="navigation__list-item"><a class="navigation__item-data" href="gallery.html">Galeria</a></li>
+            <li class="navigation__list-item"><a class="navigation__item-data" href="funding.html">Dofinansowanie z UE</a></li>
+            <li class="navigation__list-item"><a class="navigation__item-data" href="contact.html">Kontakt</a></li>
+          </ul>
+        </div>
 
-      <span class="open-side-menu">
-        <a href="#">
-          <i class="fa fa-bars"></i>
-        </a>
-      </span>
+        <span class="mobile-navigation-toggle">
+          <a class="mobile-navigation-toggle__icon" href="#">
+            <i class="mobile-navigation-toggle__open-icon fa fa-bars"></i>
+          </a>
+        </span>
+      </div>
     </div>
   </nav>
 
-  <!-- mobile nav -->
-  <div id="side-menu" class="side-nav">
-    <a href="#" class="btn-close ">&times;</a>
-    <a href="index.html">O firmie</a>
-    <a href="#">Oferta</a>
-    <a href="#">Tłocznia</a>
-    <a href="#">Narzędziownia</a>
-    <a href="#">Laser</a>
-    <a href="gallery.html">Galeria</a>
-    <a href="#">Dofinansowanie z UE</a>
-    <a href="contact.html">Kontakt</a>
-  </div>
+  <nav class="mobile-navigation">
+    <span class="mobile-navigation__button-close" href="#">
+      <i class="mobile-navigation__close-icon fas fa-times"></i>
+    </span>
+    <div class="mobile-navigation__menu">
+      <a class="mobile-navigation__item-data" href="index.html">O firmie</a>
+      <a class="mobile-navigation__item-data" href="offer.html">Oferta</a>
+      <a class="mobile-navigation__item-data" href="press.html">Tłocznia</a>
+      <a class="mobile-navigation__item-data" href="tool-shop.html">Narzędziownia</a>
+      <a class="mobile-navigation__item-data" href="laser.html">Laser</a>
+      <a class="mobile-navigation__item-data" href="gallery.html">Galeria</a>
+      <a class="mobile-navigation__item-data" href="funding.html">Dofinansowanie z UE</a>
+      <a class="mobile-navigation__item-data" href="contact.html">Kontakt</a>
+    </div>
+  </nav>
 
-  <!-- SLIDER -->
   <div class="slider grid">
-    <div class="slider_content">
-      <div class="slideshowContainer">
-
-        <img class="imageSlides" src="img/slider/1.jpg" alt="">
-        <img class="imageSlides" src="img/slider/2.jpg" alt="">
-        <img class="imageSlides" src="img/slider/3.jpg" alt="">
-
-        <span class="slideshowArrow"><i id="leftArrow" class="fas fa-angle-left"></i></span>
-        <span class="slideshowArrow"><i id="rightArrow" class="fas fa-angle-right"></i></span>
-
-        <div class="slideshowCircles">
-          <span class="circle dot"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
+    <div class="slider__container grid__column">
+      <div class="slider__slideshow-box">
+        <div class="slider__images">
+          <img class="slider__image" src="img/slider/cnc.jpg" alt="cnc-img">
+          <img class="slider__image" src="img/slider/drill-1.jpg" alt="drill-1-img">
+          <img class="slider__image" src="img/slider/drill-2.jpg" alt="drill-2-img">
         </div>
-
+        <div class="slider__arrows">
+          <span class="slider__arrow"><i id="slider__left-arrow" class="fas fa-angle-left"></i></span>
+          <span class="slider__arrow"><i id="slider__right-arrow" class="fas fa-angle-right"></i></span>
+        </div>
+        <div class="slider__circles">
+          <span class="slider__circle slider__dot-circle"></span>
+          <span class="slider__circle"></span>
+          <span class="slider__circle"></span>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- MAIN AREA -->
-  <main id="main">
-    <!-- main-a section -->
-    <section id="_main-a">
-      <div class="main-a grid">
+  <main class="main-area">
+
+    <section class="about-company grid">
+      <div class="about-company__container grid__column">
         <div class="main_content-a">
           <h1>O firmie</h1>
           <div class="line"></div>
@@ -106,55 +109,52 @@
       </div>
     </section>
 
-    <!-- main-b section -->
-    <section id="_main-b">
-      <div class="main-b grid">
-        <div class="main_content-b">
-          <ul>
-            <li>
-              <div class="box">
-                <img src="img/about-company/calendar.jpg" alt="">
-                <div class="box-content">
-                  <p>Dzięki dynamicznemu rozwojowi, wykwalifikowanej kadrze i bogatemu parkowi maszynowemu możemy
-                    terminowo realizować wszystkie zlecenia.
-                  </p>
-                </div>
+    <section class="main-b grid">
+      <div class="main_content-b grid__column">
+        <ul>
+          <li>
+            <div class="box">
+              <img src="img/about-company/calendar.jpg" alt="">
+              <div class="box-content">
+                <p>Dzięki dynamicznemu rozwojowi, wykwalifikowanej kadrze i bogatemu parkowi maszynowemu możemy
+                  terminowo realizować wszystkie zlecenia.
+                </p>
               </div>
-            </li>
-            <li>
-              <div class="box">
-                <img src="img/about-company/handshake.jpg" alt="">
-                <div class="box-content">
-                  <p>Naszym podstawowym celem jest wysokiej jakości wyrób finalny, wyprodukowany w oparciu o nowoczesne
-                    technologie oraz sprawność obsługi,
-                    a przez to uzyskanie zadowolenia klientów krajowych jak i zagranicznych.
-                  </p>
-                </div>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <img src="img/about-company/handshake.jpg" alt="">
+              <div class="box-content">
+                <p>Naszym podstawowym celem jest wysokiej jakości wyrób finalny, wyprodukowany w oparciu o nowoczesne
+                  technologie oraz sprawność obsługi,
+                  a przez to uzyskanie zadowolenia klientów krajowych jak i zagranicznych.
+                </p>
               </div>
-            </li>
-            <li class="three">
-              <div class="box">
-                <img src="img/about-company/target.jpg" alt="">
-                <div class="box-content">
-                  <p>Współpraca z wyspecjalizowaną kadrą techniczną w połączeniu z precyzją i wysoko wykwalifikowanym
-                    zespołem pracowników,
-                    oraz rozbudowującym się parkiem maszynowym i bogato wyposażoną narzędziownią pozwala nam na łatwe
-                    dostosowanie potencjału
-                    firmy na ukierunkowane potrzeby klienta.
-                  </p>
-                </div>
+            </div>
+          </li>
+          <li class="three">
+            <div class="box">
+              <img src="img/about-company/target.jpg" alt="">
+              <div class="box-content">
+                <p>Współpraca z wyspecjalizowaną kadrą techniczną w połączeniu z precyzją i wysoko wykwalifikowanym
+                  zespołem pracowników,
+                  oraz rozbudowującym się parkiem maszynowym i bogato wyposażoną narzędziownią pozwala nam na łatwe
+                  dostosowanie potencjału
+                  firmy na ukierunkowane potrzeby klienta.
+                </p>
               </div>
-            </li>
-          </ul>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
+        </ul>
       </div>
     </section>
+
   </main>
 
-  <!-- FOOTER-->
   <footer class="footer grid">
-    <div class="footer_content">
+    <div class="footer_content grid__column">
       <p>
         UNAM <span id="currentDate"></span> &copy; Wszelkie prawa zastrzeżone.
       </p>

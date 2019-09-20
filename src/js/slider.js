@@ -1,37 +1,34 @@
-//===== SLIDER =====
-
-//== image slides & cirles arrays, & counter
-var imageSlides = document.getElementsByClassName('imageSlides');
-var circles = document.getElementsByClassName('circle');
-var leftArrow = document.getElementById('leftArrow');
-var rightArrow = document.getElementById('rightArrow');
+var imageSlides = document.getElementsByClassName("slider__image");
+var circles = document.getElementsByClassName("slider__circle");
+var leftArrow = document.getElementById("slider__left-arrow");
+var rightArrow = document.getElementById("slider__right-arrow");
 var counter = 0;
 
-//== hide all images function
+// hide all images function
 function hideImages() {
   for (var i = 0; i < imageSlides.length; i++) {
-    imageSlides[i].classList.remove('visible');
+    imageSlides[i].classList.remove("slider__visible");
   }
 }
 
-//== remove all dots function
+// remove all dots function
 function removeDots() {
   for (var i = 0; i < imageSlides.length; i++) {
-    circles[i].classList.remove('dot');
+    circles[i].classList.remove("slider__dot-circle");
   }
 }
 
-//== single image loop/circles function
+// single image loop and circles function
 function imageLoop() {
   var currentImage = imageSlides[counter];
   var currentDot = circles[counter];
-  currentImage.classList.add('visible');
+  currentImage.classList.add("slider__visible");
   removeDots();
-  currentDot.classList.add('dot');
+  currentDot.classList.add("slider__dot-circle");
   counter++;
 }
 
-//== left & right arrow function & click event listeners
+// left and right arrow function & click event listeners
 function arrowClick(e) {
   var target = e.target;
   if (target == leftArrow) {
@@ -63,10 +60,10 @@ function arrowClick(e) {
   }
 }
 
-leftArrow.addEventListener('click', arrowClick);
-rightArrow.addEventListener('click', arrowClick);
+leftArrow.addEventListener("click", arrowClick);
+rightArrow.addEventListener("click", arrowClick);
 
-//== image slide function
+// image slide function
 function slideshow() {
   if (counter < imageSlides.length) {
     imageLoop();
@@ -77,6 +74,6 @@ function slideshow() {
   }
 }
 
-//== show first image & then set & call slide interval
+// show first image and then set & call slide interval
 setTimeout(slideshow, 1000);
 var imageSlideshowInterval = setInterval(slideshow, 10000);

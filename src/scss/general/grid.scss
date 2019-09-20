@@ -4,17 +4,7 @@
     grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr;
   }
 
-  /*general*/
-  .header__container,
-  .navbar-nav,
-  .slider_content,
-  .footer_content,
-  /*main-page*/
-  .main_content-a,
-  .main_content-b,
-  /*subpages*/
-  .gallery_content,
-  .contact_content {
+  .grid__column {
     grid-column: 2/4;
   }
 }
