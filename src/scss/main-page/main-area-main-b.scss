@@ -1,19 +1,19 @@
-.main_content-b {
+.company-goals__container {
   padding: 20px 35px;
   text-align: center;
   line-height: 0;
 
-  li {
+  .company-goals__list-item {
     list-style: none;
   }
 
-  img {
+  .company-goals__box-img {
     margin-top: 20px;
     width: 90%;
     height: auto;
   }
 
-  p {
+  .company-goals__box-text {
     background: rgb(242, 244, 248);
     padding: 20px 15px;
     line-height: 1.5;
@@ -21,7 +21,7 @@
   }
 }
 
-.box {
+.company-goals__box {
   margin: 15px 0;
   padding-bottom: 5px;
   -webkit-box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.32);
@@ -29,50 +29,50 @@
   box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.32);
 }
 
-.box-content {
+.company-goals__box-content {
   margin: 0 auto 20px auto;
   width: 90%;
 }
 
 @media (min-width: 768px) {
-  .main_content-b {
-    ul {
+  .company-goals__container {
+    .company-goals__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       justify-content: space-around;
-      grid-gap: 80px;
+      grid-gap: 30px;
       padding: 0 100px;
     }
 
-    img {
+    .company-goals__box-img {
       margin-top: 20px;
       object-fit: cover;
     }
   }
 
-  .box {
+  .company-goals__box {
     height: 540px;
   }
 }
 
 @media (min-width: 1149px) {
-  .box {
-    height: 555px;
+  .company-goals__box {
+    height: 580px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1149px) {
-  .main_content-b {
-    img {
+  .company-goals__container {
+    .company-goals__box-img {
       height: auto;
       width: 255px;
     }
 
-    .box-content {
+    .company-goals__box-content {
       width: 255px;
     }
 
-    ul {
+    .company-goals__list {
       display: grid;
       grid-template-columns: 285px 285px;
       padding: 0px;
@@ -81,21 +81,21 @@
     }
   }
 
-  .three {
+  .company-goals__list-item--position {
     grid-column: span 2;
     padding: 0 172px;
   }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
-  .main_content-b ul {
+  .company-goals__container .company-goals__list {
     width: 380px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 400px) and (max-width: 600px) {
-  .main_content-b ul {
+  .company-goals__container .company-goals__list {
     width: 330px;
     margin: 0 auto;
   }

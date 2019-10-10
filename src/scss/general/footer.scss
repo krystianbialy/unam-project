@@ -3,14 +3,14 @@
   border-top: 5px solid #FFFF00;
 }
 
-.footer_content {
+.footer__container {
   color: #fff;
   text-align: center;
   padding: 10px;
 }
 
 @media (min-width: 768px) {
-  .footer_content {
+  .footer__container {
     padding: 13px;
   }
 }
