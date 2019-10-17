@@ -1,9 +1,9 @@
-.aftersubmit {
+.contact__aftersubmit {
   font-size: 17px;
   margin-top: 0;
 }
 
-.loader {
+.contact__loader {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -12,20 +12,7 @@
   border-top: 16px solid #5B5EA6;
   width: 45px;
   height: 45px;
-  -webkit-animation: spin 2s linear infinite;
-  /* Safari */
   animation: spin 2s linear infinite;
-}
-
-/* safari */
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
 }
 
 @keyframes spin {
@@ -39,14 +26,14 @@
 }
 
 @media (min-width:767px) {
-  .aftersubmit {
+  .contact__aftersubmit {
     font-size: 18px;
     margin-top: 30px;
   }
 }
 
 @media (min-width: 767px) {
-  .loader {
+  .contact__loader {
     width: 50px;
     height: 50px;
   }

@@ -1,20 +1,20 @@
-var imageSlides = document.getElementsByClassName("slider__image");
-var circles = document.getElementsByClassName("slider__circle");
-var leftArrow = document.getElementById("slider__left-arrow");
-var rightArrow = document.getElementById("slider__right-arrow");
+var imageSlides = document.getElementsByClassName('slider__image');
+var circles = document.getElementsByClassName('slider__circle');
+var leftArrow = document.getElementById('slider__left-arrow');
+var rightArrow = document.getElementById('slider__right-arrow');
 var counter = 0;
 
 // hide all images function
 function hideImages() {
   for (var i = 0; i < imageSlides.length; i++) {
-    imageSlides[i].classList.remove("slider__visible");
+    imageSlides[i].classList.remove('slider__visible');
   }
 }
 
 // remove all dots function
 function removeDots() {
   for (var i = 0; i < imageSlides.length; i++) {
-    circles[i].classList.remove("slider__dot-circle");
+    circles[i].classList.remove('slider__dot-circle');
   }
 }
 
@@ -22,9 +22,9 @@ function removeDots() {
 function imageLoop() {
   var currentImage = imageSlides[counter];
   var currentDot = circles[counter];
-  currentImage.classList.add("slider__visible");
+  currentImage.classList.add('slider__visible');
   removeDots();
-  currentDot.classList.add("slider__dot-circle");
+  currentDot.classList.add('slider__dot-circle');
   counter++;
 }
 
@@ -60,8 +60,8 @@ function arrowClick(e) {
   }
 }
 
-leftArrow.addEventListener("click", arrowClick);
-rightArrow.addEventListener("click", arrowClick);
+leftArrow.addEventListener('click', arrowClick);
+rightArrow.addEventListener('click', arrowClick);
 
 // image slide function
 function slideshow() {
