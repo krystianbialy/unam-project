@@ -6,8 +6,8 @@ $(document).ready(function () {
     if ($open.is(':hidden')) {
       $open.fadeIn();
       $('.mobile-navigation').css('left', '0px')
-      $('.navigation').css('display', 'none');
-    } else {}
+      $('.navigation').hide();
+    }
   });
 
   $('.mobile-navigation__button-close').click(function (e) {
@@ -16,7 +16,7 @@ $(document).ready(function () {
     if ($open.is(':visible')) {
       $open.fadeOut();
       $('.navigation').css('display', 'block');
-    } else {}
+    }
   });
 
   $('body').click(function (e) {
@@ -25,6 +25,6 @@ $(document).ready(function () {
     if ($open.is(':visible')) {
       $open.fadeOut();
       $('.navigation').css('display', 'block');
-    } else {}
+    }
   });
 });

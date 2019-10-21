@@ -6,7 +6,8 @@ import '@fortawesome/fontawesome-free/scss/regular.scss';
 import '@fortawesome/fontawesome-free/scss/solid.scss';
 import '@fortawesome/fontawesome-free/scss/v4-shims.scss';
 
-import './js/footer.js';
-import './js/mail.js';
 import './js/navigation.js';
 import './js/slider.js';
+import './js/footer.js';
+import './js/mail.js';
+import './js/gallery.js';

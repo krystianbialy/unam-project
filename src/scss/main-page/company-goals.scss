@@ -51,7 +51,7 @@
   }
 
   .company-goals__box {
-    height: 540px;
+    height: 580px;
   }
 }
 
@@ -76,14 +76,14 @@
       display: grid;
       grid-template-columns: 285px 285px;
       padding: 0px;
-      grid-gap: 10px 60px;
+      grid-gap: 10px 30px;
       justify-content: center;
     }
   }
 
   .company-goals__list-item--position {
     grid-column: span 2;
-    padding: 0 172px;
+    padding: 0 157px;
   }
 }
 

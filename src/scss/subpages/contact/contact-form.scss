@@ -1,6 +1,6 @@
 .contact__content {
   text-align: center;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 20px 0px 20px;
 
   .section-title {
     margin-top: 10px;
@@ -80,9 +80,9 @@
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 940px) {
   .contact__content {
-    padding: 20px 20px 30px 20px;
+    padding: 20px 20px 15px 20px;
   }
 }
 
@@ -95,5 +95,12 @@
     &:hover {
       background: #000;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact__input,
+  .contact__textarea {
+    width: 75%;
   }
 }

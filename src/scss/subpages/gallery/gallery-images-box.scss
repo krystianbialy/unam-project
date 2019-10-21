@@ -1,0 +1,50 @@
+.gallery__machine-park-image,
+.gallery__details-image,
+.gallery__tools-image {
+  width: 85%;
+  margin-top: 10px;
+}
+
+@media (min-width: 1250px) {
+  .gallery__machine-park-images-box,
+  .gallery__details-images-box,
+  .gallery__tools-images-box {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+  }
+
+  .gallery__machine-park-image,
+  .gallery__details-image,
+  .gallery__tools-image {
+    margin: 20px auto 0 auto;
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1249px) {
+  .gallery__machine-park-images-box,
+  .gallery__details-images-box,
+  .gallery__tools-images-box {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    justify-content: center;
+  }
+
+  .gallery__machine-park-image,
+  .gallery__details-image,
+  .gallery__tools-image {
+    margin: 20px auto 0 auto;
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 500px) and (max-width:700px) {
+  .gallery__machine-park-image,
+  .gallery__details-image,
+  .gallery__tools-image {
+    width: 390px;
+  }
+}

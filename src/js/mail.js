@@ -30,7 +30,7 @@ $(document).ready(function () {
             $('.contact__textarea').val(''); // textarea reset after submit
             setTimeout(function () { // return to form after submit (after 3s)
               location.href = './contact.html'
-            }, 3000);
+            }, 3000000);
           });
         }
       }
