@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $('.gallery__machine-park-images-box').hide();
   $('.gallery__main-image--machine-park').click(function (e) {
     e.stopPropagation();
@@ -29,6 +30,28 @@ $(document).ready(function () {
     if ($galleryImagesBox.is(':hidden')) {
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
+    }
+  });
+
+  // Magnific Popup 
+  $('.gallery__view-machine-park-images').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery__view-details-images').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
+  $('.gallery__view-tools-images').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
     }
   });
 });

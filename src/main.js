@@ -11,3 +11,6 @@ import './js/slider.js';
 import './js/footer.js';
 import './js/mail.js';
 import './js/gallery.js';
+
+import 'magnific-popup/dist/magnific-popup.css';
+import 'magnific-popup/dist/jquery.magnific-popup.min.js';

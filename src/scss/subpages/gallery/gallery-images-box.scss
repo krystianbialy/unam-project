@@ -3,9 +3,25 @@
 .gallery__tools-image {
   width: 85%;
   margin-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    animation: flash 1s;
+  }
+
+  @keyframes flash {
+    0% {
+      opacity: .7;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 @media (min-width: 1250px) {
+
   .gallery__machine-park-images-box,
   .gallery__details-images-box,
   .gallery__tools-images-box {
@@ -24,6 +40,7 @@
 }
 
 @media (min-width: 701px) and (max-width: 1249px) {
+
   .gallery__machine-park-images-box,
   .gallery__details-images-box,
   .gallery__tools-images-box {
@@ -42,6 +59,7 @@
 }
 
 @media (min-width: 500px) and (max-width:700px) {
+
   .gallery__machine-park-image,
   .gallery__details-image,
   .gallery__tools-image {

@@ -1,17 +1,18 @@
-const webpack = require("webpack");
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: "production",
-  entry: "./src/main.js",
+  mode: 'production',
+  entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].[contentHash].js"
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].[contentHash].js'
   },
   optimization: {
     minimizer: [
@@ -23,41 +24,41 @@ module.exports = {
     rules: [{
         test: /\.html$/,
         use: [{
-          loader: "html-loader"
+          loader: 'html-loader'
         }]
       },
       {
         test: /\.css$/i,
         use: [
-          "style-loader",
-          "css-loader"
+          'style-loader',
+          'css-loader'
         ]
       },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader"
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
         use: [{
-          loader: "file-loader",
+          loader: 'file-loader',
           options: {
-            name: "[name].[contentHash].[ext]",
-            outputPath: "img"
+            name: '[name].[ext]',
+            outputPath: 'img'
           }
         }]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [{
-          loader: "file-loader",
+          loader: 'file-loader',
           options: {
-            name: "[name].[ext]",
-            outputPath: "font"
+            name: '[name].[ext]',
+            outputPath: 'font'
           }
         }]
       },
@@ -65,9 +66,9 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: [{
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"]
+            presets: ['@babel/preset-env']
           }
         }]
       },
@@ -75,24 +76,27 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      filename: "index.html"
+      template: './src/index.html',
+      filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/gallery.html",
-      filename: "gallery.html"
+      template: './src/gallery.html',
+      filename: 'gallery.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/contact.html",
-      filename: "contact.html"
+      template: './src/contact.html',
+      filename: 'contact.html'
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].[contentHash].css"
+      filename: '[name].[contentHash].css'
     }),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    })
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
+    new CopyPlugin([{
+      from: './src/php'
+    }])
   ]
 }
