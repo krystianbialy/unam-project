@@ -1,55 +1,54 @@
+/* eslint-disable no-use-before-define */
 var imageSlides = document.getElementsByClassName('slider__image');
 var circles = document.getElementsByClassName('slider__circle');
 var leftArrow = document.getElementById('slider__left-arrow');
 var rightArrow = document.getElementById('slider__right-arrow');
 var counter = 0;
 
-// hide all images function
 function hideImages() {
-  for (var i = 0; i < imageSlides.length; i++) {
+  var i = 0;
+  for (; i < imageSlides.length; i += 1) {
     imageSlides[i].classList.remove('slider__visible');
   }
 }
 
-// remove all dots function
 function removeDots() {
-  for (var i = 0; i < imageSlides.length; i++) {
+  var i = 0;
+  for (; i < imageSlides.length; i += 1) {
     circles[i].classList.remove('slider__dot-circle');
   }
 }
 
-// single image loop and circles function
 function imageLoop() {
   var currentImage = imageSlides[counter];
   var currentDot = circles[counter];
   currentImage.classList.add('slider__visible');
   removeDots();
   currentDot.classList.add('slider__dot-circle');
-  counter++;
+  counter += 1;
 }
 
-// left and right arrow function & click event listeners
 function arrowClick(e) {
   var target = e.target;
-  if (target == leftArrow) {
+  if (target === leftArrow) {
     clearInterval(imageSlideshowInterval);
     hideImages();
     removeDots();
-    if (counter == 1) {
-      counter = (imageSlides.length - 1);
+    if (counter === 1) {
+      counter = imageSlides.length - 1;
       imageLoop();
       imageSlideshowInterval = setInterval(slideshow, 10000);
     } else {
-      counter--;
-      counter--;
+      counter -= 1;
+      counter -= 1;
       imageLoop();
       imageSlideshowInterval = setInterval(slideshow, 10000);
     }
-  } else if (target == rightArrow) {
+  } else if (target === rightArrow) {
     clearInterval(imageSlideshowInterval);
     hideImages();
     removeDots();
-    if (counter == imageSlides.length) {
+    if (counter === imageSlides.length) {
       counter = 0;
       imageLoop();
       imageSlideshowInterval = setInterval(slideshow, 10000);
@@ -63,7 +62,6 @@ function arrowClick(e) {
 leftArrow.addEventListener('click', arrowClick);
 rightArrow.addEventListener('click', arrowClick);
 
-// image slide function
 function slideshow() {
   if (counter < imageSlides.length) {
     imageLoop();
@@ -76,4 +74,6 @@ function slideshow() {
 
 // show first image and then set & call slide interval
 setTimeout(slideshow, 1000);
+
+// eslint-disable-next-line vars-on-top
 var imageSlideshowInterval = setInterval(slideshow, 10000);
