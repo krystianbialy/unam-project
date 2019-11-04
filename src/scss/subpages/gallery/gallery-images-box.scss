@@ -4,20 +4,6 @@
   width: 85%;
   margin-top: 10px;
   cursor: pointer;
-
-  &:hover {
-    animation: flash 1s;
-  }
-
-  @keyframes flash {
-    0% {
-      opacity: .7;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
 }
 
 @media (min-width: 1250px) {
@@ -64,5 +50,27 @@
   .gallery__details-image,
   .gallery__tools-image {
     width: 390px;
+  }
+}
+
+@media (min-width: 767px) {
+
+  .gallery__machine-park-image,
+  .gallery__details-image,
+  .gallery__tools-image {
+
+    &:hover {
+      animation: flash 1s;
+    }
+
+    @keyframes flash {
+      0% {
+        opacity: .7;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
   }
 }

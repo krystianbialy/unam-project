@@ -13,6 +13,8 @@ Project is created with:
 * Yarn v1.17.3
 * Webpack v4.38.0
 * jQuery v3.4.1
+* ESLint v6.1.0
+* Prettier v1.18.2
 * Fontawesome v5.10.1
 * Magnific-Popup v1.1.0
 * MobileFirst
