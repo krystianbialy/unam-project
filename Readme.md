@@ -1,7 +1,5 @@
-## General info
-My first page build on CSS Grid.  
-This page is for UNAM company.  
-url UNAM website: ...
+## General info  
+This page is for UNAM company.
 
 ## Technologies and tools
 Project is created with:

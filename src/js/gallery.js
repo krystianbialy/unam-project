@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 $(document).ready(function() {
   $('.gallery__back-button').hide();
   $('.gallery__back-button').click(function(e) {
@@ -12,10 +13,12 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
+      $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
     }
     if ($backButton.is(':hidden')) {
+      $backButton.css({ "display": "flex" });
       $backButton.fadeIn();
     }
   });
@@ -27,10 +30,12 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
+      $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
     }
     if ($backButton.is(':hidden')) {
+      $backButton.css({ "display": "flex" });
       $backButton.fadeIn();
     }
   });
@@ -42,10 +47,12 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
+      $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
     }
     if ($backButton.is(':hidden')) {
+      $backButton.css({ "display": "flex" });
       $backButton.fadeIn();
     }
   });

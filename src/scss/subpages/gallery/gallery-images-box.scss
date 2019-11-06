@@ -11,7 +11,7 @@
   .gallery__machine-park-images-box,
   .gallery__details-images-box,
   .gallery__tools-images-box {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 320px);
     justify-content: center;
   }
@@ -30,7 +30,7 @@
   .gallery__machine-park-images-box,
   .gallery__details-images-box,
   .gallery__tools-images-box {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 320px);
     justify-content: center;
   }

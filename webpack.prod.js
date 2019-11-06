@@ -79,8 +79,28 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/offer.html',
+      filename: 'offer.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/press.html',
+      filename: 'press.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tool-shop.html',
+      filename: 'tool-shop.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/laser.html',
+      filename: 'laser.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/gallery.html',
       filename: 'gallery.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/funding.html',
+      filename: 'funding.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/contact.html',
