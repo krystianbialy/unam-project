@@ -10,7 +10,8 @@
 .gallery__back-button {
   display: none;
   font-size: 18px;
-  margin: 15px 0 5px 5px;
+  width: 18px;
+  margin: 15px 0 15px 5px;
   cursor: pointer;
 }
 
@@ -91,12 +92,14 @@
 @media (min-width: 901px) {
   .gallery__back-button {
     font-size: 28px;
+    width: 28px;
   }
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
   .gallery__back-button {
     font-size: 23px;
+    width: 23px;
   }
 }
 

@@ -30,3 +30,16 @@
 .contact__mailto {
   color: #fff;
 }
+
+@media (min-width: 1300px) {
+
+  .contact__mail-icon,
+  .contact__phone-icon {
+    font-size: 30px;
+  }
+
+  .contact__email-adress,
+  .contact__phone-number {
+    padding-top: 10px;
+  }
+}

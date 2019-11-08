@@ -13,6 +13,7 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
+      window.location.hash = '#gallery__top';
       $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
@@ -30,6 +31,7 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
+      window.location.hash = '#gallery__top';
       $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
@@ -47,6 +49,7 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
+      window.location.hash = '#gallery__top';
       $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
