@@ -4,6 +4,8 @@ $(document).ready(function() {
   $('.gallery__back-button').click(function(e) {
     e.stopPropagation();
     location.reload();
+    $('.gallery__images-box').css({"filter": "blur(5px)"});
+    window.location.href = '#gallery__top';
   });
 
   $('.gallery__machine-park-images-box').hide();
@@ -13,11 +15,20 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
-      window.location.hash = '#gallery__top';
       $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
     }
+
+    if (window.innerWidth >= 940) {
+      window.location.href = '#gallery__top';
+      $('html, body').animate({
+        scrollTop: $('#gallery__top').offset().top - 63
+      });
+    } else {
+      window.location.href = '#gallery__top';
+    }
+
     if ($backButton.is(':hidden')) {
       $backButton.css({ "display": "flex" });
       $backButton.fadeIn();
@@ -31,11 +42,20 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
-      window.location.hash = '#gallery__top';
       $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
     }
+
+    if (window.innerWidth >= 940) {
+      window.location.href = '#gallery__top';
+      $('html, body').animate({
+        scrollTop: $('#gallery__top').offset().top - 63
+      });
+    } else {
+      window.location.href = '#gallery__top';
+    }
+
     if ($backButton.is(':hidden')) {
       $backButton.css({ "display": "flex" });
       $backButton.fadeIn();
@@ -49,11 +69,20 @@ $(document).ready(function() {
     var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
-      window.location.hash = '#gallery__top';
       $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
     }
+
+    if (window.innerWidth >= 940) {
+      window.location.href = '#gallery__top';
+      $('html, body').animate({
+        scrollTop: $('#gallery__top').offset().top - 63
+      });
+    } else {
+      window.location.href = '#gallery__top';
+    }
+
     if ($backButton.is(':hidden')) {
       $backButton.css({ "display": "flex" });
       $backButton.fadeIn();

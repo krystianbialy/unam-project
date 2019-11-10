@@ -26,7 +26,7 @@
       }
       if(isEmail($clientEmail) && $subject != '' && $message != '') {
         // ===== SEND EMAIL =====
-		  $headers = 'From: ' . $clientEmail . '\r\n' . 'Content-Type: text/html; charset=utf-8\r\n';
+		  $headers = 'From: ' . $clientEmail . "\r\n" . "Content-Type: text/html; charset=utf-8\r\n";
 		  mail($emailTo, $subject, $message, $headers);
 		}
     echo json_encode($array);
