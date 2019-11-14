@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 $(document).ready(function() {
   // form validation
   $('.contact__input, .contact__textarea').on('focus', function() {
@@ -27,7 +28,8 @@ $(document).ready(function() {
           json.subjectMessage === '' &&
           json.messageMessage === ''
         ) {
-          $('.contact__form').fadeOut('fast', function() {
+          $('.contact__contact-details').css({"display": "none"});
+          $('.contact__form').fadeOut(function() {
             $('.contact__form-box').append(
               '<p class="contact__aftersubmit">Wiadomość została wysłana.</p><div class="contact__loader"></div>'
             );
@@ -36,7 +38,7 @@ $(document).ready(function() {
             setTimeout(function() {
               // return to form after submit (after 3s)
               location.href = './contact.html';
-            }, 3000000);
+            }, 3000);
           });
         }
       }

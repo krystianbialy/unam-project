@@ -1,6 +1,6 @@
 <?php
 
- //===== EMAIL ADDRESS VERIFICATION =====
+ // email address verification
   function isEmail($email) {
 	 return filter_var($email, FILTER_VALIDATE_EMAIL);
   }
@@ -25,7 +25,7 @@
         $array['messageMessage'] = 'Empty message!';
       }
       if(isEmail($clientEmail) && $subject != '' && $message != '') {
-        // ===== SEND EMAIL =====
+        // send email
 		  $headers = 'From: ' . $clientEmail . "\r\n" . "Content-Type: text/html; charset=utf-8\r\n";
 		  mail($emailTo, $subject, $message, $headers);
 		}

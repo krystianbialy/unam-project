@@ -8,18 +8,8 @@ $(document).ready(function() {
     window.location.href = '#gallery__top';
   });
 
-  $('.gallery__machine-park-images-box').hide();
-  $('.gallery__main-image--machine-park').click(function(e) {
-    var $mainImagesBox = $('.gallery__main-images-box');
-    var $galleryImagesBox = $('.gallery__machine-park-images-box');
+  function gallerySettings() {
     var $backButton = $('.gallery__back-button');
-    e.stopPropagation();
-    if ($galleryImagesBox.is(':hidden')) {
-      $galleryImagesBox.css({"display": "grid"});
-      $galleryImagesBox.fadeIn();
-      $($mainImagesBox).hide();
-    }
-
     if (window.innerWidth >= 940) {
       window.location.href = '#gallery__top';
       $('html, body').animate({
@@ -33,60 +23,45 @@ $(document).ready(function() {
       $backButton.css({ "display": "flex" });
       $backButton.fadeIn();
     }
+  }
+
+  $('.gallery__machine-park-images-box').hide();
+  $('.gallery__main-image--machine-park').click(function(e) {
+    var $mainImagesBox = $('.gallery__main-images-box');
+    var $galleryImagesBox = $('.gallery__machine-park-images-box');
+    e.stopPropagation();
+    if ($galleryImagesBox.is(':hidden')) {
+      $galleryImagesBox.css({"display": "grid"});
+      $galleryImagesBox.fadeIn();
+      $($mainImagesBox).hide();
+    }
+    gallerySettings();
   });
 
   $('.gallery__details-images-box').hide();
   $('.gallery__main-image--details').click(function(e) {
     var $mainImagesBox = $('.gallery__main-images-box');
     var $galleryImagesBox = $('.gallery__details-images-box');
-    var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
       $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
     }
-
-    if (window.innerWidth >= 940) {
-      window.location.href = '#gallery__top';
-      $('html, body').animate({
-        scrollTop: $('#gallery__top').offset().top - 63
-      });
-    } else {
-      window.location.href = '#gallery__top';
-    }
-
-    if ($backButton.is(':hidden')) {
-      $backButton.css({ "display": "flex" });
-      $backButton.fadeIn();
-    }
+    gallerySettings();
   });
 
   $('.gallery__tools-images-box').hide();
   $('.gallery__main-image--tools').click(function(e) {
     var $mainImagesBox = $('.gallery__main-images-box');
     var $galleryImagesBox = $('.gallery__tools-images-box');
-    var $backButton = $('.gallery__back-button');
     e.stopPropagation();
     if ($galleryImagesBox.is(':hidden')) {
       $galleryImagesBox.css({"display": "grid"});
       $galleryImagesBox.fadeIn();
       $($mainImagesBox).hide();
     }
-
-    if (window.innerWidth >= 940) {
-      window.location.href = '#gallery__top';
-      $('html, body').animate({
-        scrollTop: $('#gallery__top').offset().top - 63
-      });
-    } else {
-      window.location.href = '#gallery__top';
-    }
-
-    if ($backButton.is(':hidden')) {
-      $backButton.css({ "display": "flex" });
-      $backButton.fadeIn();
-    }
+    gallerySettings();
   });
 
   // Magnific Popup

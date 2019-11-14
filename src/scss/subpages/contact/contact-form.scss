@@ -60,7 +60,7 @@
 .contact__textarea:focus {
   outline: 0;
   background: #f7f4ed;
-  border: 3px dashed #00A591;
+  border: 3px solid #00A591;
   box-shadow: none;
 }
 
@@ -74,10 +74,6 @@
   padding: 10px 30px;
   border: none;
   font-family: 'Lato', sans-serif;
-
-  &:hover {
-    background: #006E6D;
-  }
 }
 
 @media (min-width: 940px) {

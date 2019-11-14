@@ -1,0 +1,52 @@
+.funding__content {
+  text-align: center;
+  padding: 20px 20px 30px 20px;
+
+  .section-title {
+    margin-top: 10px;
+  }
+}
+
+.funding__general-information {
+  max-width: 930px;
+  margin: 17px auto 0 auto;
+  padding: 0 5px 0 5px;
+
+  .funding__general-information-text {
+    margin: 11px 0 0 0;
+  }
+}
+
+.funding__FAQ-box {
+  max-width: 880px;
+  margin: 5px auto 3px auto;
+  text-align: left;
+
+  .funding__FAQ-question,
+  .funding__FAQ-answer {
+    padding: 10px 12px 10px 12px;
+  }
+}
+
+.funding__FAQ-box--top {
+  margin-top: 25px;
+}
+
+.funding__FAQ-question {
+  display: flex;
+  background: #DFCFBE;
+  border: 1px solid #000;
+  cursor: pointer;
+
+  .funding__FAQ-question-arrow {
+    margin-left: auto;
+
+    font-size: 25px;
+  }
+}
+
+.funding__FAQ-answer {
+  background: #EAE6DA;
+  display: none;
+  cursor: pointer;
+}
