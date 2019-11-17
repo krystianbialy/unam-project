@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -106,6 +106,39 @@ module.exports = {
       template: './src/contact.html',
       filename: 'contact.html'
     }),
+    // English version
+    new HtmlWebpackPlugin({
+      template: './src/en/index.html',
+      filename: 'en/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/offer.html',
+      filename: 'en/offer.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/press.html',
+      filename: 'en/press.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/tool-shop.html',
+      filename: 'en/tool-shop.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/laser.html',
+      filename: 'en/laser.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/gallery.html',
+      filename: 'en/gallery.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/funding.html',
+      filename: 'en/funding.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/contact.html',
+      filename: 'en/contact.html'
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].[contentHash].css'
     }),
@@ -114,10 +147,13 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery'
     }),
-    new CopyPlugin([
-      {
-        from: './src/php'
+    new FileManagerPlugin({
+      onEnd: {
+        copy: [
+          { source: './dist/img', destination: './dist/en/img' },
+          { source: './src/php', destination: './dist' }
+        ]
       }
-    ])
+    })
   ]
 };

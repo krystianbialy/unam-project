@@ -1,9 +1,8 @@
 .slider {
-  background: #034F84;
+  background: url(img/slider/slider-background.jpg);
 }
 
 .slider__container {
-  background-color: #034F84;
   padding-top: 1px;
 }
 
@@ -81,13 +80,13 @@
   border: solid 2px rgba(255, 255, 255, 0.5);
 }
 
-@media (min-width: 855px) {
+@media (min-width: 940px) {
   .slider__container {
     padding-top: 0px;
   }
 
   .slider__slideshow-box {
-    margin: 25px 0;
+    margin: 15px 0;
   }
 
   .slider__arrow:hover {

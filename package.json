@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.1",
-    "copy-webpack-plugin": "^5.0.4",
+    "filemanager-webpack-plugin": "^2.0.5",
     "jquery": "^3.4.1",
     "magnific-popup": "^1.1.0"
   }
