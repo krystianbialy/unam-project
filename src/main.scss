@@ -1,5 +1,6 @@
 @import "scss/general/global.scss";
 @import "scss/general/grid.scss";
+@import "scss/general/FAQ.scss";
 @import "scss/general/header.scss";
 @import "scss/general/navigation.scss";
 @import "scss/general/slider.scss";
@@ -8,10 +9,12 @@
 @import "scss/main-page/about-comapny.scss";
 @import "scss/main-page/company-goals.scss";
 
+@import "scss/subpages/offer/offer.scss";
+
+@import "scss/subpages/tool-shop/tool-shop.scss";
+
 @import "scss/subpages/gallery/gallery.scss";
 @import "scss/subpages/gallery/gallery-images-box.scss";
-
-@import "scss/subpages/funding/funding.scss";
 
 @import "scss/subpages/contact/contact-details.scss";
 @import "scss/subpages/contact/contact-form.scss";

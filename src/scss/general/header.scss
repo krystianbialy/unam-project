@@ -6,10 +6,12 @@
 
 .header__language {
   margin-left: auto;
+  height: 21px;
+  width: 32px;
+  margin-right: 5px;
 }
 
 .header__language-img {
-  width: 40px;
   height: auto;
   border: 1px solid #000;
 }
@@ -17,12 +19,6 @@
 @media (min-width: 768px) and (max-width: 939px) {
   .header__logo-img {
     margin-left: 35px;
-  }
-}
-
-@media (max-width: 1305px) {
-  .header__language-img {
-    margin-right: 10px;
   }
 }
 
@@ -35,7 +31,6 @@
 
   .header__language-img {
     width: 30px;
-    height: auto;
   }
 }
 
@@ -75,5 +70,17 @@
   .header__language-img {
     width: 40%;
     margin-right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__language {
+    width: 42px;
+    height: 27px;
+    margin-right: 10px;
+
+    .header__language-img {
+      width: 40px;
+    }
   }
 }

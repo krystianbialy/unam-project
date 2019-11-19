@@ -151,7 +151,8 @@ module.exports = {
       onEnd: {
         copy: [
           { source: './dist/img', destination: './dist/en/img' },
-          { source: './src/php', destination: './dist' }
+          { source: './src/php', destination: './dist' },
+          { source: './src/php', destination: './dist/en' }
         ]
       }
     })

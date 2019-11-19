@@ -25,6 +25,20 @@ a:hover {
   padding: 20px 20px 30px 20px;
 }
 
+.general-information-style {
+  max-width: 930px;
+  margin: 17px auto 0 auto;
+  padding: 0 5px 0 5px;
+
+  .general-information-text-style {
+    margin: 11px 0 0 0;
+  }
+}
+
+.list-title {
+  font-size: 19px;
+}
+
 .section-title {
   margin-top: 10px;
   letter-spacing: 1px;

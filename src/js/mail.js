@@ -30,9 +30,15 @@ $(document).ready(function() {
         ) {
           $('.contact__contact-details').css({"display": "none"});
           $('.contact__form').fadeOut(function() {
-            $('.contact__form-box').append(
+            if ($("input[type='submit']").val() === 'Please wait...') {
+              $('.contact__form-box').append(
+                '<p class="contact__aftersubmit">Message was sent.</p><div class="contact__loader"></div>'
+              );
+            } else {
+              $('.contact__form-box').append(
               '<p class="contact__aftersubmit">Wiadomość została wysłana.</p><div class="contact__loader"></div>'
-            );
+              );
+            }
             $('.contact__input').val(''); // input reset after submit
             $('.contact__textarea').val(''); // textarea reset after submit
             setTimeout(function() {
@@ -61,7 +67,8 @@ $(document).ready(function() {
   });
 
   $('form.contact__form').submit(function() {
-    $("input[type='submit']")
+    if ($("input[type='submit']").val() === 'Wyślij') {
+      $("input[type='submit']")
       .attr('disabled', true)
       .val('Proszę czekać...');
     setTimeout(function() {
@@ -69,5 +76,15 @@ $(document).ready(function() {
         .attr('disabled', false)
         .val('Wyślij');
     }, 2000); // after 2s enabled
+    } else {
+      $("input[type='submit']")
+      .attr('disabled', true)
+      .val('Please wait...');
+    setTimeout(function() {
+      $("input[type='submit']")
+        .attr('disabled', false)
+        .val('Send');
+    }, 2000); // after 2s enabled
+    }
   });
 });
