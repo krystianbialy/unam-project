@@ -34,7 +34,9 @@ $ yarn dev
 #### slider/img url:
 * https://pixabay.com/photos/industrial-plasma-industry-factory-2805773/
 * https://pixabay.com/photos/milling-machining-industry-1151344/
-* https://pixabay.com/photos/milling-machining-industry-1151358/  
+* https://pixabay.com/photos/milling-machining-industry-1151358/
+#### slider/background/img url:
+* https://pixabay.com/photos/background-blue-rough-abstract-3246124/
 #### main page/about-company/gif url:
 * https://giphy.com/gifs/TITANSofCNC-america-cnc-9P3DSeomkldAXE0TXn
 #### main page/company-goals/img url:

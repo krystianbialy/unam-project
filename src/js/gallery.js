@@ -11,7 +11,6 @@ $(document).ready(function() {
   function gallerySettings() {
     var $backButton = $('.gallery__back-button');
     if (window.innerWidth >= 940) {
-      window.location.href = '#gallery__top';
       $('html, body').animate({
         scrollTop: $('#gallery__top').offset().top - 63
       });

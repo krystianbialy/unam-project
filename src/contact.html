@@ -17,7 +17,7 @@
       <div class="header__content">
         <a class="header__logo" href="index.html"><img class="header__logo-img" src="img/logo/logo.png"
             alt="logo-img" /></a>
-        <a class="header__language" href="dist/en/contact.html"><img class="header__language-img"
+        <a class="header__language" href="en/contact.html"><img class="header__language-img"
             src="img/language/uk.png" alt="language-img" /></a>
       </div>
     </div>
@@ -70,7 +70,7 @@
   <main class="main-area">
 
     <section class="contact grid">
-      <div class="contact__conatiner grid__column">
+      <div class="contact__conatiner grid__column" id="contact__top">
         <div class="contact__content content-general-style">
           <h1 class="section-title">Kontakt</h1>
           <div class="dividing-line"></div>
@@ -88,7 +88,7 @@
                 <i class="fas fa-phone"></i>
               </div>
               <div class="contact__phone-number">
-                <p>123 456 789</p>
+                <p class="contact__phone-number-paragraph">123 456 789</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@
             <form class="contact__form" action="contact.php" method="post">
               <div class="contact__form-group">
                 <label class="contact__label" for="contact__email">Email</label>
-                <input type="text" maxlength="100" name="email" placeholder="Twój mail"
+                <input type="email" maxlength="100" name="email" placeholder="Twój mail"
                   class="contact__input contact__email" id="contact__email">
               </div>
               <div class="contact__form-group">
