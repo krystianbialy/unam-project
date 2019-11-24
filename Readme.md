@@ -19,7 +19,7 @@ Project is created with:
 * RWD
 
 ## Status
-Site under construction.
+finished
 
 ## Setup
 To run this project, install it locally using yarn:
