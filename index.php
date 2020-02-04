@@ -1,9 +1,9 @@
 <?php
 
-  res.header('Access-Control-Allow-Origin', '*'); 
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  return res.send(200);
+  header('Access-Control-Allow-Origin', '*'); 
+  header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  return send(200);
 
  // email address verification
   function isEmail($email) {
