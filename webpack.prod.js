@@ -149,12 +149,7 @@ module.exports = {
     }),
     new FileManagerPlugin({
       onEnd: {
-        copy: [
-          { source: './dist/img', destination: './dist/en/img' },
-          { source: './src/php', destination: './dist' },
-          { source: './src/php/contact.php', destination: './dist/en' },
-          { source: './composer.json', destination: './dist' }
-        ]
+        copy: [{ source: './dist/img', destination: './dist/en/img' }]
       }
     })
   ]
