@@ -1,5 +1,10 @@
 <?php
 
+  res.header('Access-Control-Allow-Origin', '*'); 
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  return res.send(200);
+
  // email address verification
   function isEmail($email) {
 	 return filter_var($email, FILTER_VALIDATE_EMAIL);
