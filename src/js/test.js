@@ -1,7 +1,11 @@
-console.log('HELLO');
-
 const xhr = new XMLHttpRequest();
-const url = 'https://unam-project.herokuapp.com';
-   
-xhr.open('GET', url);
+
+xhr.addEventListener("load",  function() {
+    if (xhr.status === 200) {
+        const json = JSON.parse(xhr.response);
+        console.log(json);
+    }
+});
+
+xhr.open("POST", "http://localhost/unam-php", true);
 xhr.send();
