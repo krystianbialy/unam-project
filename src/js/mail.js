@@ -55,9 +55,7 @@ $(document).ready(function() {
     e.preventDefault();
     $.ajax({
       type: 'POST',
-      url: 'http://localhost/unam-php/',
-      withCredentials: true,
-      crossDomain: true,
+      url: 'https://unam-project.herokuapp.com/',
       data: $postdata,
       dataType: 'json',
       success: function(json) {
