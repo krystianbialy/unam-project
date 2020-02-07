@@ -1,5 +1,8 @@
 ## General info  
-This page is for UNAM company.
+1. This page is for UNAM company.
+2. PHP code is on separate branch(cors-server-side) and server:  
+   https://unam-project.herokuapp.com
+3. Cross-Origin Resource Sharing (CORS) is used to connect client-side <--> server-side.
 
 ## Technologies and tools
 Project is created with:
