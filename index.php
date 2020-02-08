@@ -42,7 +42,7 @@ if ($_POST)
     {
         // send email
         $headers = array(
-            'Authorization:' . $secretKey,
+            'Authorization:' . getenv('secretKey'),
             'Content-Type: application/json'
         );
 
