@@ -60,6 +60,7 @@ if ($_POST)
             "subject" => $subject,
             "content" => array(
                 array(
+                    "type" => "text/plain",
                     "value" => $message
                 )
             )
