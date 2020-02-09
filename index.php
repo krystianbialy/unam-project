@@ -1,6 +1,5 @@
-<?php include 'send-grid-api-key.php'; ?>
-
 <?php
+
 header("Access-Control-Allow-Origin: https://unam-project.netlify.com");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Authorization, Origin, X-Requested-With, Content-Type, Accept");
@@ -42,7 +41,7 @@ if ($_POST)
     {
         // send email
         $headers = array(
-            'Authorization:' . getenv('secretKey'),
+            'Authorization:' . getenv('secretKey') ,
             'Content-Type: application/json'
         );
 
@@ -50,7 +49,9 @@ if ($_POST)
             "personalizations" => array(
                 array(
                     "to" => array(
-                        "email" => $emailTo
+                        array(
+                            "email" => $emailTo,
+                        )
                     )
                 )
             ) ,
@@ -75,11 +76,7 @@ if ($_POST)
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $response = curl_exec($ch);
         curl_close($ch);
-
-        echo $response;
     }
-    echo json_encode($array);
-
 }
 
 ?>
